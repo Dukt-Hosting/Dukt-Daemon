@@ -11,11 +11,14 @@ const _ = require('lodash');
 const Keypair = require('keypair');
 const Getos = require('getos');
 
+const Package = rfr('package.json');
 
-class Daemon {
-    constructor (config) {
-
-    }
-};
+Log.info('+ ------------------------------------ +');
+Log.info(`| Dukt Daemon v${Package.version}                     |`);
+Log.info('|        https://dukthosting.net       |');
+Log.info('|                                      |');
+Log.info('|  Copyright 2015 - 2020 Joshua Ellis  |');
+Log.info('|           and contributors           |');
+Log.info('+ ------------------------------------ +');
 
 module.exports = Daemon;
